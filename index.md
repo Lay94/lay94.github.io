@@ -8,7 +8,7 @@ Con este proyecto se obtienen dos funciones, una primera `bd_dengue.sh` para des
 
 ### ¿Qué necesito? 🛠️
 
-Se debe tener instalado previamente [Docker](https://www.docker.com/get-started/) y [Git Bash](https://carpentries.github.io/workshop-template/#shell). Si reside en algún país donde se limitan los servicios de [Docker Hub](https://hub.docker.com/) y no puede descargar las imágenes, le recomendamos [DockerImageSave](https://github.com/jadolg/DockerImageSave) para descargar ubuntu, necesaria para el proyecto.
+Se debe tener instalado previamente [Docker](https://www.docker.com/get-started/) y [Git Bash](https://carpentries.github.io/workshop-template/#shell). Si reside en algún país donde se limitan los servicios de [Docker Hub](https://hub.docker.com/) y no puede descargar las imágenes, le recomendamos [DockerImageSave](https://github.com/jadolg/DockerImageSave) para descargar `ubuntu`, necesaria para el proyecto.
 
 ### ¿Cómo lo ejecuto? ⚙️
 **1.** Clonar el repositorio:
