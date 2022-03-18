@@ -2,7 +2,7 @@
 
 A través de este proyecto se podrá visualizar la información sobre los casos de dengue confirmados en México cuyos datos son obtenidos de la [dirección general de epidemiología](https://www.gob.mx/salud/documentos/datos-abiertos-152127).
 
-Del proyecto se obtienen dos funciones, una primera `bd_dengue.sh` para descargar y actualizar la base de datos a utilizar, y una segunda `casos_dengue.py` que genera y salva un gráfico interactivo en formato html. Este gráfico visualiza los casos confimados por fechas y por clasificación en cuanto a la edad: Infante (<12), Joven (<27), Adulto (<60) y Anciano (>=60)
+Del proyecto se obtienen dos funciones, una primera `bd_dengue.sh` para descargar y actualizar la base de datos a utilizar, y una segunda `casos_dengue.py` que genera y salva un gráfico interactivo en formato html. Este gráfico visualiza los casos confirmados por fechas y por clasificación en cuanto a la edad: Infante (< 12 años), Joven (<27 años), Adulto (<60 años) y Anciano (>=60 años)
 
 ### Pre-requisitos
 
