@@ -29,7 +29,7 @@ docker run -it --name casos_dengue dengue_mx bash
 ```
 **5.** Dentro del contenedor podremos encontrar tanto las funciones como los archivos que ellas generan:
 * La base de datos actualizada `dengue_data.csv`
-* El gráfico interactivo `fig.html`
+* El gráfico interactivo [`fig.html`](https://lay94.github.io/fig.html)
 
 ### Aquí un ejemplo del gráfico interactivo 🤓
 
