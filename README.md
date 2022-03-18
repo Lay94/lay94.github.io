@@ -1,4 +1,4 @@
-## Curso Herramientas de Productividad para Ciencia de Datos
+## Actividades del Curso Herramientas de Productividad para Ciencia de Datos
 
 A través de este proyecto se podrá visualizar la información sobre los casos de dengue confirmados en México cuyos datos son obtenidos de la [dirección general de epidemiología](https://www.gob.mx/salud/documentos/datos-abiertos-152127). 
 
