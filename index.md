@@ -11,19 +11,23 @@ Con este proyecto se obtienen dos funciones, una primera `bd_dengue.sh` para des
 Se debe tener instalado previamente [Docker](https://www.docker.com/get-started/) y [Git Bash](https://carpentries.github.io/workshop-template/#shell). Si reside en algún país donde se limitan los servicios de [Docker Hub](https://hub.docker.com/) y no puede descargar las imágenes, le recomendamos [DockerImageSave](https://github.com/jadolg/DockerImageSave) para descargar ubuntu, necesaria para el proyecto.
 
 ### ¿Cómo lo ejecuto? ⚙️
-**1.** Clonar el repositorio
+**1.** Clonar el repositorio:
 ```
 git clone https://github.com/Lay94/lay94.github.io
 ```
-**2.** Construir contenedor
+**2.** Ir a la carpeta clonada. En este caso:
+```
+cd lay94.github.io
+```
+**3.** Construir contenedor:
 ```
 docker build -t dengue_mx .
 ```
-**3.** Ejecutar el contenedor de docker
+**4.** Ejecutar el contenedor de docker:
 ```
 docker run -it --name casos_dengue dengue_mx bash
 ```
-**4.** Dentro del contenedor podremos encontrar tanto las funciones como los archivos que ellas generan:
+**5.** Dentro del contenedor podremos encontrar tanto las funciones como los archivos que ellas generan:
 * La base de datos actualizada `dengue_data.csv`
 * El gráfico interactivo `fig.html`
 
