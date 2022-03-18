@@ -4,6 +4,4 @@ lang: es
 title: Actividades del Curso Herramientas de Productividad para Ciencia de Datos
 description:
   Respuesta a las actividades del curso
-baseurl: "/curso-hpcd"
 url: "https://lay94.github.io"
-permalink: pretty
