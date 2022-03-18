@@ -1,41 +1,34 @@
-## Welcome to GitHub Pages
+## Curso Herramientas de Productividad para Ciencia de Datos
 
-You can use the [editor on GitHub](https://github.com/Lay94/lay94.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+A través de este proyecto se podrá visualizar la información sobre los casos de dengue confirmados en México cuyos datos son obtenidos de la [dirección general de epidemiología](https://www.gob.mx/salud/documentos/datos-abiertos-152127).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+El proyecto genera dos funciones, una primera `bd_dengue.sh` para descargar y actualizar la base de datos a utilizar, y una segunda `casos_dengue.py` que genera y salva un gráfico interactivo en formato html. Este gráfico visualiza los casos confimados por fechas y por clasificación en cuanto a la edad: Infante (<12), Joven (<27), Adulto (<60) y Anciano (>=60)
 
-### Markdown
+### Pre-requisitos
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Se debe tener instalado previamente [Docker](https://www.docker.com/get-started/) y [Git Bash](https://carpentries.github.io/workshop-template/#shell). Si reside en algún país donde se limitan los servicios de [Docker Hub](https://hub.docker.com/) y no puede descargar las imágenes, le recomendamos [DockerImageSave](https://github.com/jadolg/DockerImageSave) para descargar ubuntu, necesaria para el proyecto.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
+### Ejecutando el proyecto
+**1.** Clonar el repositorio
 ```
+git clone https://github.com/Lay94/lay94.github.io
+```
+**2.** Construir contenedor
+```
+docker build -t dengue_mx .
+```
+**3.** Ejecutar el contenedor de docker
+```
+docker run -it --name casos_dengue dengue_mx bash
+```
+**4.** Dentro del contenedor podremos encontrar tanto las funciones .sh y .py como los archivos que generan:
+```
+1. La base de datos actualizada dengue_data.csv
+2. El gráfico interactivo fig.html
+```
+### Aquí un ejemplo del gráfico interactivo:
 
-[Link](https://lay94.github.io/fig.html) and ![Image](https://lay94.github.io/fig.html)
 
 <figure class="figure_container">
   <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="fig.html" height="525" width="100%"></iframe>
 </figure>
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Lay94/lay94.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
