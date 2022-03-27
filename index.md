@@ -38,6 +38,9 @@ docker run -it --name casos_dengue dengue_mx bash
   <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="fig.html" height="525" width="100%"></iframe>
 </figure>
 
+### Resultados 📊📝
+
+A través del gráfico obtenido se pudo visualizar que desde inicio de año 2022 hasta el 1ero de marzo de 2022, los casos confimados de dengue han ido en descenso y que en este periodo de tiempo, el grupo etario menos afectado por esta enfermedad son los ancianos.
 
 ---
 ⌨️ con ❤️ por [Elaine Grenot Castellano](https://github.com/Lay94/lay94.github.io) 😊
